@@ -1,0 +1,293 @@
+<html lang="ru"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAXI DONER - Твоё Меню</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+        
+        .leader-line {
+            flex-grow: 1;
+            border-bottom: 1px dashed rgba(115, 115, 115, 0.25);
+            margin: 0 0.5rem 0.3rem 0.5rem;
+            min-width: 0.5rem;
+            transition: border-color 0.2s ease;
+        }
+
+        .menu-row:hover .leader-line {
+            border-bottom-color: rgba(234, 179, 8, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-neutral-950 text-neutral-300 font-sans antialiased min-h-screen p-4 sm:p-8 lg:p-12 flex justify-center selection:bg-yellow-500/20 selection:text-yellow-300">
+
+    <div class="w-full max-w-5xl mx-auto flex flex-col">
+        
+        <!-- Logo -->
+        <div class="text-center mb-10 sm:mb-14">
+            <div class="inline-flex flex-col items-center">
+                <h1 class="text-3xl sm:text-4xl font-semibold tracking-tighter text-neutral-50 uppercase">
+                    TAXI DONER
+                </h1>
+                <span class="text-xs font-medium text-yellow-500 tracking-[0.2em] uppercase mt-1.5">Твоё меню</span>
+            </div>
+        </div>
+
+        <!-- Grid Layout (Bento Grid) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+
+            <!-- ДОНЕР + ШАУРМА -->
+            <div class="md:col-start-1 md:row-span-2 lg:col-start-1 lg:row-span-2 lg:row-start-1 h-full rounded-2xl border border-neutral-800/60 bg-neutral-900/40 p-5 sm:p-6 backdrop-blur-sm flex flex-col gap-5">
+                <div class="flex items-center gap-2.5 text-yellow-500 pb-3 border-b border-neutral-800/60">
+                    <iconify-icon icon="solar:bag-4-linear" stroke-width="1.5" class="text-lg"></iconify-icon>
+                    <h2 class="text-xs font-semibold uppercase tracking-wider">Донер</h2>
+                </div>
+
+                <div class="flex flex-col gap-3">
+                    <h3 class="text-xs font-medium text-yellow-500/80 uppercase tracking-widest mt-1">В лаваше</h3>
+                    <div class="flex items-baseline justify-between text-sm menu-row">
+                        <span class="text-neutral-200 font-medium whitespace-nowrap">Куриный</span>
+                        <span class="leader-line"></span>
+                        <div class="flex items-center gap-2 whitespace-nowrap">
+                            <span class="text-neutral-500 text-xs">1.5→2 000</span>
+                            <span class="text-neutral-50 font-semibold">1 700 ₸</span>
+                        </div>
+                    </div>
+                    <div class="flex items-baseline justify-between text-sm menu-row">
+                        <span class="text-neutral-200 font-medium whitespace-nowrap">Говяжий</span>
+                        <span class="leader-line"></span>
+                        <div class="flex items-center gap-2 whitespace-nowrap">
+                            <span class="text-neutral-500 text-xs">1.5→2 200</span>
+                            <span class="text-neutral-50 font-semibold">1 900 ₸</span>
+                        </div>
+                    </div>
+                    <div class="flex items-baseline justify-between text-sm menu-row">
+                        <span class="text-neutral-200 font-medium whitespace-nowrap">Ассорти</span>
+                        <span class="leader-line"></span>
+                        <div class="flex items-center gap-2 whitespace-nowrap">
+                            <span class="text-neutral-500 text-xs">1.5→2 100</span>
+                            <span class="text-neutral-50 font-semibold">1 800 ₸</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-3 mt-2">
+                    <h3 class="text-xs font-medium text-yellow-500/80 uppercase tracking-widest">В батоне</h3>
+                    <div class="flex items-baseline justify-between text-sm menu-row">
+                        <span class="text-neutral-200 font-medium whitespace-nowrap">Куриный</span>
+                        <span class="leader-line"></span>
+                        <span class="text-neutral-50 font-semibold whitespace-nowrap">2 000 ₸</span>
+                    </div>
+                    <div class="flex items-baseline justify-between text-sm menu-row">
+                        <span class="text-neutral-200 font-medium whitespace-nowrap">Говяжий</span>
+                        <span class="leader-line"></span>
+                        <span class="text-neutral-50 font-semibold whitespace-nowrap">2 100 ₸</span>
+                    </div>
+                    <div class="flex items-baseline justify-between text-sm menu-row">
+                        <span class="text-neutral-200 font-medium whitespace-nowrap">Ассорти</span>
+                        <span class="leader-line"></span>
+                        <span class="text-neutral-50 font-semibold whitespace-nowrap">2 050 ₸</span>
+                    </div>
+                </div>
+
+                <div class="h-[1px] w-full bg-neutral-800/60 my-1"></div>
+
+                <div class="flex flex-col gap-3">
+                    <div class="flex items-center gap-2.5 text-yellow-500 pb-3 border-b border-neutral-800/60">
+                        <iconify-icon icon="solar:round-transfer-horizontal-linear" stroke-width="1.5" class="text-lg"></iconify-icon>
+                        <h2 class="text-xs font-semibold uppercase tracking-wider">Шаурма</h2>
+                    </div>
+                    <div class="flex items-baseline justify-between text-sm menu-row mt-1">
+                        <span class="text-neutral-200 font-medium whitespace-nowrap">Куриная</span>
+                        <span class="leader-line"></span>
+                        <span class="text-neutral-50 font-semibold whitespace-nowrap">1 500 ₸</span>
+                    </div>
+                    <div class="flex items-baseline justify-between text-sm menu-row">
+                        <span class="text-neutral-200 font-medium whitespace-nowrap">Говяжья</span>
+                        <span class="leader-line"></span>
+                        <span class="text-neutral-50 font-semibold whitespace-nowrap">1 600 ₸</span>
+                    </div>
+                    <div class="flex items-baseline justify-between text-sm menu-row">
+                        <span class="text-neutral-200 font-medium whitespace-nowrap">Ассорти</span>
+                        <span class="leader-line"></span>
+                        <span class="text-neutral-50 font-semibold whitespace-nowrap">1 550 ₸</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- БУРГЕР -->
+            <div class="md:col-start-2 md:row-start-1 lg:col-start-2 lg:row-start-1 h-full rounded-2xl border border-neutral-800/60 bg-neutral-900/40 p-5 sm:p-6 backdrop-blur-sm flex flex-col gap-5">
+                <div class="flex items-center gap-2.5 text-yellow-500 pb-3 border-b border-neutral-800/60">
+                    <iconify-icon icon="solar:layers-minimalistic-linear" stroke-width="1.5" class="text-lg"></iconify-icon>
+                    <h2 class="text-xs font-semibold uppercase tracking-wider">Бургер</h2>
+                </div>
+                
+                <div class="flex flex-col gap-3 mt-1">
+                    <div class="flex items-baseline justify-between text-sm menu-row">
+                        <span class="text-neutral-200 font-medium whitespace-nowrap">Куриный</span>
+                        <span class="leader-line"></span>
+                        <div class="flex items-center gap-2 whitespace-nowrap">
+                            <span class="text-neutral-500 text-xs">чиз→2 000</span>
+                            <span class="text-neutral-50 font-semibold">1 700 ₸</span>
+                        </div>
+                    </div>
+                    <div class="flex items-baseline justify-between text-sm menu-row">
+                        <span class="text-neutral-200 font-medium whitespace-nowrap">Говяжий</span>
+                        <span class="leader-line"></span>
+                        <div class="flex items-center gap-2 whitespace-nowrap">
+                            <span class="text-neutral-500 text-xs">чиз→2 100</span>
+                            <span class="text-neutral-50 font-semibold">1 800 ₸</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h-[1px] w-full bg-neutral-800/60 my-0.5"></div>
+
+                <div class="flex flex-col gap-3">
+                    <h3 class="text-xs font-medium text-yellow-500/80 uppercase tracking-widest">Дабл</h3>
+                    <div class="flex items-baseline justify-between text-sm menu-row">
+                        <span class="text-neutral-200 font-medium whitespace-nowrap">Куриный</span>
+                        <span class="leader-line"></span>
+                        <div class="flex items-center gap-2 whitespace-nowrap">
+                            <span class="text-neutral-500 text-xs">чиз→2 500</span>
+                            <span class="text-neutral-50 font-semibold">2 000 ₸</span>
+                        </div>
+                    </div>
+                    <div class="flex items-baseline justify-between text-sm menu-row">
+                        <span class="text-neutral-200 font-medium whitespace-nowrap">Говяжий</span>
+                        <span class="leader-line"></span>
+                        <div class="flex items-center gap-2 whitespace-nowrap">
+                            <span class="text-neutral-500 text-xs">чиз→2 700</span>
+                            <span class="text-neutral-50 font-semibold">2 100 ₸</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- КОМБО -->
+            <div class="md:col-start-2 md:row-start-2 lg:col-start-2 lg:row-start-2 h-full rounded-2xl border border-neutral-800/60 bg-neutral-900/40 p-5 sm:p-6 backdrop-blur-sm flex flex-col gap-4">
+                <div class="flex flex-col items-center pb-4 border-b border-neutral-800/60 text-center gap-1.5">
+                    <div class="flex items-center gap-2 text-yellow-500">
+                        <iconify-icon icon="solar:box-linear" stroke-width="1.5" class="text-lg"></iconify-icon>
+                        <h2 class="text-xs font-semibold uppercase tracking-wider">Комбо</h2>
+                    </div>
+                    <span class="text-xs text-neutral-500 tracking-wide">+ Фри + Кола + Соус</span>
+                </div>
+                
+                <div class="grid grid-cols-2 lg:grid-cols-2 gap-2.5 mt-1">
+                    <div class="bg-neutral-900 border border-neutral-800/80 rounded-xl p-3.5 flex flex-col items-center justify-center text-center gap-1 transition-colors hover:bg-neutral-800/50">
+                        <span class="text-xs font-semibold text-yellow-500">Донер</span>
+                        <span class="text-xs text-neutral-500 tracking-wide">кур / гов</span>
+                        <span class="text-sm font-semibold text-neutral-50 mt-1">3 100 ₸</span>
+                    </div>
+                    <div class="bg-neutral-900 border border-neutral-800/80 rounded-xl p-3.5 flex flex-col items-center justify-center text-center gap-1 transition-colors hover:bg-neutral-800/50">
+                        <span class="text-xs font-semibold text-yellow-500 whitespace-nowrap">Бургер чиз</span>
+                        <span class="text-xs text-neutral-500 tracking-wide">кур / гов</span>
+                        <span class="text-sm font-semibold text-neutral-50 mt-1">3 100 ₸</span>
+                    </div>
+                    <div class="bg-neutral-900 border border-neutral-800/80 rounded-xl p-3.5 flex flex-col items-center justify-center text-center gap-1 transition-colors hover:bg-neutral-800/50">
+                        <span class="text-xs font-semibold text-yellow-500">Шаурма</span>
+                        <span class="text-xs text-neutral-500 tracking-wide">кур / гов</span>
+                        <span class="text-sm font-semibold text-neutral-50 mt-1">2 900 ₸</span>
+                    </div>
+                    <div class="bg-neutral-900 border border-neutral-800/80 rounded-xl p-3.5 flex flex-col items-center justify-center text-center gap-1 transition-colors hover:bg-neutral-800/50">
+                        <span class="text-xs font-semibold text-yellow-500">Крылья</span>
+                        <span class="text-xs text-transparent select-none">-</span>
+                        <span class="text-sm font-semibold text-neutral-50 mt-1">2 900 ₸</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- СНЕКИ -->
+            <div class="md:col-start-1 md:row-start-3 lg:col-start-3 lg:row-start-1 h-full rounded-2xl border border-neutral-800/60 bg-neutral-900/40 p-5 sm:p-6 backdrop-blur-sm flex flex-col gap-5">
+                <div class="flex items-center gap-2.5 text-yellow-500 pb-3 border-b border-neutral-800/60">
+                    <iconify-icon icon="solar:bolt-circle-linear" stroke-width="1.5" class="text-lg"></iconify-icon>
+                    <h2 class="text-xs font-semibold uppercase tracking-wider">Снеки</h2>
+                </div>
+
+                <div class="flex flex-col gap-3 mt-1">
+                    <h3 class="text-xs font-medium text-yellow-500/80 uppercase tracking-widest">Крылья</h3>
+                    <div class="grid grid-cols-4 gap-2 mt-1 mb-2">
+                        <div class="bg-neutral-900 border border-neutral-800/80 rounded-lg p-2.5 flex flex-col items-center justify-center text-center gap-1">
+                            <span class="text-xs text-neutral-400">3 шт.</span>
+                            <span class="text-xs font-semibold text-neutral-50">800 ₸</span>
+                        </div>
+                        <div class="bg-neutral-900 border border-neutral-800/80 rounded-lg p-2.5 flex flex-col items-center justify-center text-center gap-1">
+                            <span class="text-xs text-neutral-400">6 шт.</span>
+                            <span class="text-xs font-semibold text-neutral-50">1 600 ₸</span>
+                        </div>
+                        <div class="bg-neutral-900 border border-neutral-800/80 rounded-lg p-2.5 flex flex-col items-center justify-center text-center gap-1">
+                            <span class="text-xs text-neutral-400">9 шт.</span>
+                            <span class="text-xs font-semibold text-neutral-50">2 200 ₸</span>
+                        </div>
+                        <div class="bg-neutral-900 border border-neutral-800/80 rounded-lg p-2.5 flex flex-col items-center justify-center text-center gap-1">
+                            <span class="text-xs text-neutral-400">12 шт.</span>
+                            <span class="text-xs font-semibold text-neutral-50 whitespace-nowrap">2 700 ₸</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h-[1px] w-full bg-neutral-800/60 my-0.5"></div>
+
+                <div class="flex flex-col gap-3">
+                    <div class="flex items-baseline justify-between text-sm menu-row">
+                        <span class="text-neutral-200 font-medium whitespace-nowrap">Наггетсы</span>
+                        <span class="leader-line"></span>
+                        <span class="text-neutral-50 font-semibold whitespace-nowrap">1 200 ₸</span>
+                    </div>
+                    <div class="flex items-baseline justify-between text-sm menu-row">
+                        <span class="text-neutral-200 font-medium whitespace-nowrap">Сырные палочки</span>
+                        <span class="leader-line"></span>
+                        <span class="text-neutral-50 font-semibold whitespace-nowrap">1 200 ₸</span>
+                    </div>
+                    <div class="flex items-baseline justify-between text-sm menu-row">
+                        <span class="text-neutral-200 font-medium whitespace-nowrap">Фри</span>
+                        <span class="leader-line"></span>
+                        <span class="text-neutral-50 font-semibold whitespace-nowrap">800 ₸</span>
+                    </div>
+                    <div class="flex items-baseline justify-between text-sm menu-row">
+                        <span class="text-neutral-200 font-medium whitespace-nowrap">Чебуреки</span>
+                        <span class="leader-line"></span>
+                        <span class="text-neutral-50 font-semibold whitespace-nowrap">600 ₸</span>
+                    </div>
+                    <div class="flex items-baseline justify-between text-sm menu-row">
+                        <span class="text-neutral-200 font-medium whitespace-nowrap">Пельмени</span>
+                        <span class="leader-line"></span>
+                        <span class="text-neutral-50 font-semibold whitespace-nowrap">1 700 ₸</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- НАПИТКИ -->
+            <div class="md:col-start-2 md:row-start-3 lg:col-start-3 lg:row-start-2 h-full rounded-2xl border border-neutral-800/60 bg-neutral-900/40 p-5 sm:p-6 backdrop-blur-sm flex flex-col gap-5">
+                <div class="flex items-center gap-2.5 text-yellow-500 pb-3 border-b border-neutral-800/60">
+                    <iconify-icon icon="solar:cup-paper-linear" stroke-width="1.5" class="text-lg"></iconify-icon>
+                    <h2 class="text-xs font-semibold uppercase tracking-wider">Напитки</h2>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2.5 mt-1">
+                    <div class="bg-neutral-900 border border-neutral-800/80 rounded-xl p-3 flex flex-col justify-center gap-1.5 transition-colors hover:bg-neutral-800/50">
+                        <span class="text-xs text-neutral-400 line-clamp-2 leading-tight">Кола Fuse / Gorilla</span>
+                        <span class="text-sm font-semibold text-neutral-50">600 ₸</span>
+                    </div>
+                    <div class="bg-neutral-900 border border-neutral-800/80 rounded-xl p-3 flex flex-col justify-center gap-1.5 transition-colors hover:bg-neutral-800/50">
+                        <span class="text-xs text-neutral-400">Айран</span>
+                        <span class="text-sm font-semibold text-neutral-50">300 ₸</span>
+                    </div>
+                </div>
+
+                <div class="h-[1px] w-full bg-neutral-800/60 my-1"></div>
+
+                <div class="flex items-baseline justify-between text-sm menu-row">
+                    <span class="text-neutral-200 font-medium whitespace-nowrap">Доп. соус</span>
+                    <span class="leader-line"></span>
+                    <span class="text-neutral-50 font-semibold whitespace-nowrap">150 ₸</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body></html>
